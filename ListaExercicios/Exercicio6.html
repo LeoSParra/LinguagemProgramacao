@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!DOCTYPE js>
+<html>
+    <head>
+        <title> Exercicio 6  </title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <!-- criando uma seção -->
+        <section>
+            <!-- cabeçalho de nível 3 -->
+            <h3> Exercicio 6 </h3>
+            <div>
+                Digite o salário fixo <input type="number" id="salFixo"/>
+            </div>
+            <div>
+                Digite o valor das vendas <input type="number" id="vendas"/>
+            </div>
+            <div>
+                <button type="button" onClick="calcular()"> Enviar </button> 
+            </div>
+            <div>
+                <p id="comissao"/>               
+            </div>
+            <div>
+                <p id="salFinal"/>
+            </div>
+        </section>
+    </body>
+</html>
+
+<style>
+div {
+    margin-bottom: 20px; /* margem abaixo */
+}
+
+body {
+    background-color: peru;
+}
+
+section {
+    border-radius: 20px;
+    background-color: brown;
+    padding: 20px; /* espaçamento interno à direita, à esquerda, acima e abaixo
+    */ 
+    margin: auto; /* centraliza a seção */
+    width: 600px; /* largura */
+    margin-top: 100px; /* afastando-se do topo da página */
+}
+
+p{
+    color: white
+}
+</style>
+
+<script>
+function calcular() {
+    let salFixo= Number (document.getElementById("salFixo").value) //lembrar de perguntar o pq isso vira string
+    let vendas = document.getElementById("vendas").value
+    let comissao = (vendas / 100) * 4
+    let salFinal= comissao + salFixo
+    document.getElementById("comissao").innerHTML =`O resultado da comissão é ${comissao.toFixed(2)} reais`
+    document.getElementById("salFinal").innerHTML =`O salário final é ${salFinal.toFixed(2)} reais`
+}
+
+</script>
