@@ -35,6 +35,9 @@
        let maior
        let menor
 
+       //criando variavel para ver se tem algum erro
+       let erro = false //assume q n temos erro
+
        if (sinal == 1) {
         document.getElementById("resul").innerHTML = `A media é ${(n1+n2)/2}`
        }
@@ -65,8 +68,11 @@
        }
 
        else {
-        document.getElementById("resul").innerHTML = `Digite outro Numero!`
-       }
+            erro = true //temos um erro
+        }
+        if (erro){
+            document.getElementById("resul").innerHTML = `Erro no programa, digite outro número!! `
+        }
     
     }
    </script>
