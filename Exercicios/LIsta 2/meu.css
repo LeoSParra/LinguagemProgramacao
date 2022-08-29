@@ -1,24 +1,14 @@
-/* folha de estilo em cascata */
-/* o estilo aplicado a um elemento desce para os filhos */
-
-div {
-    margin-bottom: 20px; /* margem abaixo */
-}
-
 body {
-    background-color: peru;
-}
-
-section {
-    border-radius: 20px;
-    background-color: brown;
-    padding: 20px; /* espaçamento interno à direita, à esquerda, acima e abaixo
-    */ 
-    margin: auto; /* centraliza a seção */
-    width: 600px; /* largura */
-    margin-top: 100px; /* afastando-se do topo da página */
-}
-
-p{
-    color: white
-}
+    background-color: bisque;
+    }
+    div {
+    margin-bottom: 20px;
+    }
+    section {
+    background-color: antiquewhite;
+    padding: 15px; 
+    margin: 15px;
+    width: 600px; 
+    margin: auto; 
+    margin-top: 100px; 
+    }
