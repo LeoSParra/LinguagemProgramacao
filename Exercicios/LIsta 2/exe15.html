@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Exercício 15</title>
+        <meta charset="utf-8"/>
+
+        <link rel="stylesheet" href="meu.css"/>
+    </head>
+    <body>
+        <section>
+            <h3> Exercício 15 </h3>
+            <div>
+                Escolha o tipo de investimento 
+                <select id="escolha">
+                    <option value="1"> Poupança </option>
+                    <option value="2"> Fundos de renda fixa </option> 
+                </select>
+            </div>
+            <div>
+                Informe o valor do investimento <input type="number" id="invest"/>
+            </div>
+            <div>
+                <button onclick="calcular()"> Enviar </button>
+            </div>
+            <div>
+                <p id="resul"/>
+            </div>
+        </section>
+    </body>
+
+</html>
+
+
+<script>
+    function calcular(){
+    let invest = Number (document.getElementById("invest").value)
+    let escolha = Number (document.getElementById("escolha").value)
+    
+        switch(escolha){
+             case 1: document.getElementById("resul").innerHTML = `O novo valor com esse tipo de investimento é ${invest+(invest*0.03)}`
+                     break;
+             case 2: document.getElementById("resul").innerHTML = `O novo valor com esse tipo de investimento é ${invest+(invest*0.04)}`
+                     break;
+        }   
+    }
+</script>
+
