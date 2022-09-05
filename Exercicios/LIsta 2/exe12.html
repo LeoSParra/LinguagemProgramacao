@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">      
+    <link href="meu.css" rel="stylesheet"?> 
+    <title>Exercicio 12</title>
+   </head>
+   <body>
+      <section>
+         <h3>Exercicio 12</h3>
+         <div>
+            Informe o Salário Bruto: <input type="number" id="sal"/>
+         </div>
+         <div>
+            <button type="button" onclick="calcular()">Enviar</button>
+         </div>
+         <div>
+            <p id="resul"/>
+         </div>
+      </section>
+   </body>
+
+   <script>
+      function calcular() {
+       let sal = Number (document.getElementById("sal").value)
+       let erro = false
+       if (sal < 350) {
+        gratificação = 100
+       }
+       else if (sal >= 350 , sal < 600) {
+        gratificação = 75
+       }
+       else if (sal >= 600 , sal < 900) {
+        gratificação = 50
+       }
+       else if (sal >= 900) {
+        gratificação = 35
+       }
+       else {
+        erro = true
+       }
+       if (erro) {
+        document.getElementById("resul").innerHTML = `Valor errado inserido`
+       }
+       let vr = (sal + gratificação) - (sal*0.07)
+       document.getElementById("resul").innerHTML = `O valor a receber é ${vr.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'  })}`
+
+    }
+   </script>
+</html>
