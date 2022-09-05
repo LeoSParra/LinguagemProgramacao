@@ -1,7 +1,7 @@
 function calcular(){
 
     let peso = Number(document.getElementById("peso").value)
-    let altura = Number(document.getElementById("idade").value)
+    let idade = Number(document.getElementById("idade").value)
     //calcular o grupo de risco
     let grupo
     let erro = false
