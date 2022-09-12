@@ -10,7 +10,7 @@ function calcularExe2(){
             maiorLucro = lucro
 
         }
-        console.log(`lucro: ${lucro} com preço a ${preco}`)
+        console.log(`lucro: ${lucro} com preço a ${preco} e quantidade ${qtde}`)
         qtde = qtde + 26
     }
     console.log(`Maior lucro ${maiorLucro}`)
