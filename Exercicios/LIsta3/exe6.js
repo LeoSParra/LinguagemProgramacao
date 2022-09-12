@@ -1,4 +1,4 @@
-function calcular(){
+function calcularExe6(){
     let cod 
     let valor = 0
     let total = 0, aux = 0, aux2 = 0

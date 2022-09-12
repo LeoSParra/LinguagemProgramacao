@@ -1,10 +1,10 @@
-function calcular(){
+function calcularExe7(){
     let altura, peso, idade
     let qtd1=0, qtd2=0, qtd3=0
     let somaAltura = 0, cont = 0
     let media = 0
 
-    for(let i = 0; i < 4; i++){
+    for(let i = 0; i < 8; i++){
         idade = Number(prompt("Digite a idade"))
         altura = Number(prompt("Digite a altura"))
         peso = Number(prompt("Digite o peso"))

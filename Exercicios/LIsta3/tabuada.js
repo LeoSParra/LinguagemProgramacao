@@ -1,4 +1,4 @@
-function calcular(){
+function calcularTabuada(){
 
     let num = 1
 
@@ -11,16 +11,4 @@ function calcular(){
         num++
     }
 
-}
-function calcularMedia(){
-    let altura
-    let contador = 1
-    let acumula = 0 // neutro para somma
-    while(contador <= 3){
-        altura = Number (prompt(`Informe a altura`))
-        acumula = acumula + altura 
-        contador++
-    }
-    console.log(`A média das alturas é ${(acumula/(contador-1)).toFixed(2)}`)
-    
 }
