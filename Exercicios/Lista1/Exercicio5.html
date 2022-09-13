@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!DOCTYPE js>
+<html>
+    <head>
+        <title> Exercicio 5  </title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <!-- criando uma seção -->
+        <section>
+            <!-- cabeçalho de nível 3 -->
+            <h3> Exercicio 5 </h3>
+            <div>
+                Digite o preço do produto <input type="number" id="preco"/>
+            </div>
+            <div>
+                <button type="button" onClick="calcular()"> Enviar </button> 
+            </div>
+            <div>
+                <p id="descont"/>
+            </div>
+        </section>
+    </body>
+</html>
+
+<style>
+div {
+    margin-bottom: 20px; /* margem abaixo */
+}
+
+body {
+    background-color: peru;
+}
+
+section {
+    border-radius: 20px;
+    background-color: brown;
+    padding: 20px; /* espaçamento interno à direita, à esquerda, acima e abaixo
+    */ 
+    margin: auto; /* centraliza a seção */
+    width: 600px; /* largura */
+    margin-top: 100px; /* afastando-se do topo da página */
+}
+
+p{
+    color: white
+}
+</style>
+
+<script>
+function calcular() {
+    let preco= document.getElementById("preco").value
+    let descont= preco - ((preco / 100) * 10)
+    document.getElementById("descont").innerHTML =`O preço do produto com desconto de 10% é ${descont.toFixed(2)}`
+}
+
+</script>
