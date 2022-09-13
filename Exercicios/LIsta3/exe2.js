@@ -8,7 +8,6 @@ function calcularExe2(){
         lucro = (preco * qtde) - despesa
         if(lucro > maiorLucro){
             maiorLucro = lucro
-
         }
         console.log(`lucro: ${lucro} com preço a ${preco} e quantidade ${qtde}`)
         qtde = qtde + 26
