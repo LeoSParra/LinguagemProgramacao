@@ -6,7 +6,7 @@ function calcularExe6(){
     let prazo = 0
     let erro = false
 
-    for(let i = 0; i <= 5; i++){
+    for(let i = 0; i < 15; i++){
         cod = String (prompt("Digite o código: V ou P "))
         valor = Number (prompt("Digite os valores: "))
 
