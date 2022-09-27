@@ -1,6 +1,6 @@
 function calcularExe1(){
     let v1=0,v2=0,v3=0,v4=0,v5=0
-    let opcao, cont
+    let opcao, cont=0
     let aux
 
     do{
@@ -31,7 +31,14 @@ function calcularExe1(){
                 break    
         }
     }while(opcao != 0)
-
+    
+    let total = v1 + v2 + v3 + v4 + v5
+    document.getElementById("resultado").innerHTML = `qtd tudo: ${v1} </br>
+        qtd quase tudo ${v2} </br>
+        bastante ${v3} </br>
+        pouco ${v4} </br> 
+        tanto faz ${v5} </br>
+        porcentagem em cima do tanto faz: ${((v5*100) / total).toFixed(2)} `
 
     for(let i = 0; i < 4; i++){
         if(v1 > v2){
@@ -54,12 +61,6 @@ function calcularExe1(){
             v4 = v5
             v5 = aux
         }
-    }   
-    document.getElementById("resultado").innerHTML = `qtd tudo: ${v1} </br>
-        qtd quase tudo ${v2} </br>
-        bastante ${v3} </br>
-        pouco ${v4} </br> 
-        tanto faz ${v5} </br>
-        porcentagem em cima do tanto faz: ${((v5*100) / cont - 1).toFixed(2)} </br>
-        a ordem crescente: ${v1} - ${v2} - ${v3} - ${v4} - ${v5}`
+    }    
+    document.getElementById("resultado2").innerHTML = `Ordem crescende: ${v1} - ${v2} - ${v3} - ${v4} - ${v5}`
 }
