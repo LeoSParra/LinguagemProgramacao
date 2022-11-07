@@ -47,11 +47,5 @@ function exercicio3(){
             qtdHomens++
         }
     }
-    console.log(`% de homens: ${(qtdHomens/5)*100}`)
-
-
-
-
-
-    
+    console.log(`% de homens: ${(qtdHomens/5)*100}`)    
 }
